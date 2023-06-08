@@ -1,0 +1,10 @@
+{
+    "billboard": {
+        "name": "SUPPER SUMMER SALE",
+        "banner": "/assets/banners/campaign/campaign_01.png",
+        "showcase": [
+            "ts3031",
+            "ts4554"
+        ]
+    }
+}

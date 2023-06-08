@@ -1,0 +1,8 @@
+[
+  {
+    "name": "SUPPER SUMMER SALE",
+    "isDiscount": true,
+    "discount": 40,
+    "productTypes": [ "jogger", "t-shirt" ]
+  }
+]

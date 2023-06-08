@@ -1,0 +1,21 @@
+.products-showcase-container
+    each product in products
+        - var price = product.basePrice
+        - var hasDiscount = false
+        - var discount = 0
+        if Object.keys(product.campaign).length != 0
+            - price = product.campaign.newPrice
+            - hasDiscount = true
+
+        .product-container.semi-white
+            .product-preview-wrapper
+                img
+            .product-description-container
+                p #{product.name}
+                if hasDiscount
+                    .offer-tag #{product.campaign.discount}% OFF
+                    button(onclick=`window.location = "/view-product?id=${product.id}"`).buy-button Buy for 
+                        strike $#{product.basePrice}
+                        p   $#{price}
+                else
+                    button(onclick=`window.location = "/view-product?id=${product.id}"`).buy-button Buy for $#{price}

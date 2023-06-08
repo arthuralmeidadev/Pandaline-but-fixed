@@ -1,0 +1,29 @@
+.billboard
+    .billboard-presentation-wrapper
+        img(src= `${config.billboard.banner}`)
+    .billboard-items-container
+        if config.billboard.showcase.length == 1
+            - let item = products.find(product => product.id == config.billboard.showcase[0])
+            - console.log(item)
+            .billboard-item
+                .billboard-item-preview-wrapper
+                    img
+                .billboard-item-description-container
+                    p #{item.name}
+                    button(onclick=`window.location = "/view-product?id=${item.id}"`) View Product
+
+        else if config.billboard.showcase.length == 2
+            - let item0 = products.find(product => product.id == config.billboard.showcase[0])
+            - let item1 = products.find(product => product.id == config.billboard.showcase[1])
+            .billboard-item
+                .billboard-item-preview-wrapper
+                    img
+                .billboard-item-description-container
+                    p #{item0.name}
+                    button(onclick=`window.location = "/view-product?id=${item0.id}"`) View Product
+            .billboard-item
+                .billboard-item-preview-wrapper
+                    img
+                .billboard-item-description-container
+                    p #{item1.name}
+                    button(onclick=`window.location = "/view-product?id=${item1.id}"`) View Product

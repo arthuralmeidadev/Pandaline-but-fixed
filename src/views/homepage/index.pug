@@ -1,0 +1,27 @@
+html(lang="en-US")
+    head
+        title pandaline
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet" href="/styles/homepage.css")
+    body
+        main 
+            .side-bar
+                img(src="/assets/banners/pandaline.png" alt="logo")
+                .new-products
+                    h2 NEW
+                    button#arrow-left
+                    button#arrow-right
+                nav
+                    button#about-us About us
+                    button#terms-and-policy Terms and Policy
+                    button#cookies Cookies
+                    button#about-us Contact us
+            input(placeholder="Search product" onblur="this.value=''" maxlength="50")#search-bar.semi-white
+            button#cart-button.semi-white
+
+            .main
+                include billboard.pug
+                include products.pug
+        script(src="/scripts/homepage.js")
+            //- button#orders-button

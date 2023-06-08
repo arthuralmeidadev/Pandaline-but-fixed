@@ -1,0 +1,171 @@
+[
+  {
+    "id": "ts3031",
+    "type": "t-shirt",
+    "name": "T-SHIRT COTTON NIGHT-SKY DESIGN",
+    "basePrice": 34.99,
+    "colors": [
+      "white",
+      "black",
+      "gray"
+    ],
+    "sizes": [
+      "M",
+      "ML",
+      "L"
+    ],
+    "campaign": {
+      "name": "SUPER SUMMER SALE",
+      "isDiscount": true,
+      "discount": 40,
+      "newPrice": 13.99
+    }
+  },
+  {
+    "id": "jg2045",
+    "type": "jogger",
+    "name": "JOGGER SPORT ZIPPER POCKETS",
+    "basePrice": 29.99,
+    "colors": [
+      "white",
+      "black",
+      "gray",
+      "green",
+      "navy"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "campaign": {
+      "name": "SUPER SUMMER SALE",
+      "isDiscount": true,
+      "discount": 40,
+      "newPrice": 11.99
+    }
+  },
+  {
+    "id": "ls5878",
+    "type": "long-sleeve",
+    "name": "LONG-SLEEVE WITH DESIGN",
+    "basePrice": 32.99,
+    "colors": [
+      "white",
+      "black",
+      "blue",
+      "light-gray",
+      "beije"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "ML",
+      "L",
+      "XL"
+    ],
+    "campaign": {}
+  },
+  {
+    "id": "ls1393",
+    "type": "long-sleeve",
+    "name": "LONG-SLEEVE NO DESIGN",
+    "basePrice": 32.99,
+    "colors": [
+      "white",
+      "black",
+      "blue",
+      "light-gray",
+      "beije"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "ML",
+      "L",
+      "XL"
+    ],
+    "campaign": {}
+  },
+  {
+    "id": "hd5389",
+    "type": "hoodie",
+    "name": "HOODIE DOUBLE LAYER SYNTHWAVE DESIGN",
+    "basePrice": 29.99,
+    "colors": [
+      "black",
+      "blue",
+      "light-gray",
+      "red"
+    ],
+    "sizes": [
+      "M",
+      "ML",
+      "L"
+    ],
+    "campaign": {}
+  },
+  {
+    "id": "ts4554",
+    "type": "t-shirt",
+    "name": "T-SHIRT COTTON URBAN DESIGN",
+    "basePrice": 34.99,
+    "colors": [
+      "white",
+      "light-gray",
+      "gray"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "ML"
+    ],
+    "campaign": {
+      "name": "SUPER SUMMER SALE",
+      "isDiscount": true,
+      "discount": 40,
+      "newPrice": 13.99
+    }
+  },
+  {
+    "id": "pt465",
+    "type": "pants",
+    "name": "PANTS TEEN STAINED JEANS",
+    "basePrice": 32.99,
+    "colors": [
+      "beije",
+      "caramel",
+      "maroon"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "campaign": {}
+  },
+  {
+    "id": "jg465",
+    "type": "jogger",
+    "name": "JOGGER SPORT ZIPPER POCKETS",
+    "basePrice": 29.99,
+    "colors": [
+      "black",
+      "blue",
+      "gray",
+      "green",
+      "navy"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "campaign": {
+      "name": "SUPER SUMMER SALE",
+      "isDiscount": true,
+      "discount": 40,
+      "newPrice": 11.99
+    }
+  }
+]

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="170.3188mm"
+   height="166.61206mm"
+   viewBox="0 0 170.3188 166.61206"
+   version="1.1"
+   id="svg5"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-12.397693,-37.054587)">
+    <path
+       id="rect184"
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;paint-order:markers stroke fill"
+       d="m 19.897493,37.054586 a 7.5,7.5 0 0 0 -7.4998,7.500317 7.5,7.5 0 0 0 7.4998,7.499801 h 13.078272 l 7.885307,31.938102 c 7.27e-4,0.003 0.0013,0.0058 0.0021,0.0088 l 2.863391,11.596708 0.624251,2.528528 a 7.5,7.5 0 0 0 0,5.17e-4 l 13.801225,55.894771 c 1.001984,4.05804 5.236459,7.20628 9.502262,7.20628 h 88.219939 c 3.62174,0 7.34915,-2.87043 8.41395,-6.55825 l 17.77515,-61.56265 c 1.91294,-6.625362 -0.50587,-12.517742 -5.55625,-12.903088 L 53.049992,70.784827 46.130001,42.756047 a 7.50075,7.50075 0 0 0 -7.281209,-5.701461 z m 48.5066,131.254004 a 2.5,2.5 0 0 0 -2.499589,2.50011 2.5,2.5 0 0 0 2.499589,2.5001 H 150.0079 a 2.5,2.5 0 0 0 2.5001,-2.5001 2.5,2.5 0 0 0 -2.5001,-2.50011 z m 3.365686,10.44432 a 12.734967,12.457096 0 0 0 -12.734623,12.45661 12.734967,12.457096 0 0 0 12.734623,12.45712 12.734967,12.457096 0 0 0 12.73514,-12.45712 12.734967,12.457096 0 0 0 -12.73514,-12.45661 z m 73.603781,0 a 12.734967,12.457096 0 0 0 -12.73463,12.45661 12.734967,12.457096 0 0 0 12.73463,12.45712 12.734967,12.457096 0 0 0 12.73514,-12.45712 12.734967,12.457096 0 0 0 -12.73514,-12.45661 z"
+       inkscape:export-filename="cart.svg"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+  </g>
+</svg>
