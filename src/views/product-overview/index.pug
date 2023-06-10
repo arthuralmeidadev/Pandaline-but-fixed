@@ -14,6 +14,17 @@ html(lang="en-US")
                 p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 .size-chart
                     each size in product.sizes
-                        button(name="size-choice" id=`${size}` onclick="updateButtons(this)") #{size}
-            .shopping.container
+                        button(name="size-choice" id=`${size}` onclick="updateSizeButtons(this)") #{size}
+                .color-chart
+                    p Colors
+                    each color in product.colors
+                        button(name="color-choice" title=`${color}` id=`${color}` style=`background-color: ${color};` onclick="updateColorButtons(this)")
+                .shopping-container
+                    .quantity-selector
+                        p Quantity
+                        button(onclick="subtractQuantity()") -
+                        div#quantity 1
+                        button(onclick="addQuantity()") +
+                    .shopping-button-wrapper
+                        button Add to cart
         script(src="/scripts/product-overview.js")

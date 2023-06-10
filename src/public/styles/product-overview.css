@@ -3,15 +3,19 @@
 }
 
 body {
-    background-color: #D45500;
+    background-color: hsl(282, 100%, 41%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 main {
     border-radius: 20px;
     background-color: white;
     display: grid;
-    justify-items: center;
-    margin: 2%;
+    justify-content: center;
+    width: 70rem;
+    height: 35rem
 }
 
 .showcase-container {
@@ -22,14 +26,16 @@ main {
     align-content: center;
     margin-block: 5%;
     border-right: #D45500 solid 1px;
-    padding-right: 5%;
+    padding-right: 2.5rem;
+    margin-right: 2.5rem;
+
 }
 
 .images-slider {
     background-color: #DDD;
     border-radius: 20px;
     width: 500px;
-    height: 500px;
+    height: 400px;
     margin-bottom: 5%;
 }
 
@@ -39,12 +45,14 @@ main {
     grid-row: 1;
     grid-column: 2;
     width: 500px;
+    height: 400px;
     font: normal 14px Helvetica;
     color: #D45500;
 }
 
 .description-container p {
     margin-block: 20px;
+    height: 200px;
     color: #888;
 }
 
@@ -53,24 +61,99 @@ main {
 }
 
 .size-chart button {
-    appearance: none;
-    border: 2px solid #D45500;
+    border: 2px solid black;
     background-color: white;
-    color: #D45500;
+    color: black;
     height: 40px;
     width: 40px;
     transition: .3s;
-    border-radius: 10px;
+    border-radius: 4px;
     margin-inline: 5px;
     font: bold 16px Helvetica;
 }
 
 .checked {
-    background-color: #D45500 !important;
+    background-color: black !important;
     color: white !important;
+}   
+
+.color-chart p {
+    margin-bottom: 10px;
+    height: auto;
 }
 
-.shopping.container {
-    grid-row: 2;
-    grid-column: 2;
+.color-chart button {
+    border: 1px solid gray;
+    margin-right: 10px;
+    box-shadow: 2px 2px 5px #0005;
+    height: 20px;
+    width: 20px;
+    border-radius: 6px;
+}
+
+.color-selected {
+    border: 2px solid #D45500 !important;
+}
+
+.shopping-button-wrapper button {
+    color: white;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 4px;
+    font: bold 20px Helvetica;
+    width: 200px;
+    height: 40px;
+    transition: .3s;
+}
+
+.shopping-button-wrapper button:hover {
+    background-color: #D45500;
+    border-color: #D45500;
+    color: white;
+}
+
+.shopping-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.quantity-selector {
+    margin-top: 20px;
+    display: block;
+    align-content: center;
+}
+
+.quantity-selector p {
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.quantity-selector button {
+    text-align: center;
+    color: #888;
+    background-color: white;
+    border: 1px solid #888;
+    box-shadow: 2px 2px 5px #0005;
+    border-radius: 4px;
+    width: 40px;
+    height: 30px;
+    font: bold 15px Helvetica;
+}
+
+.quantity-selector button:hover {
+    color: #D45500;
+    border-color: #D45500;
+}
+
+.quantity-selector button:active {
+    background-color: #ebebeb;
+}
+
+.quantity-selector div {
+    align-content: center;
+    display: inline;
+    font: normal 20px Helvetica;
+    color: #D45500;
+    padding: 20px;
 }
