@@ -75,9 +75,8 @@ async function verifyToken(token) {
 
 async function getNewAccessToken(decryptedData) {
   try {
-    const userData = await userManagement.getUser(decryptedData.id);
-    const { id, secret } = userData;
-    const accessTokenPayload = await encrypt({ id, secret });
+    const { id } = decryptedData;
+    const accessTokenPayload = await encrypt({ id, adminSecret });
     const accessTokenClaims = { expiresIn: "3m" };
     const accessToken = jwt.sign(accessTokenPayload, jwtSecret, accessTokenClaims);
 
