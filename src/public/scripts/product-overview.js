@@ -18,7 +18,7 @@ function updateColorButtons(thisButton) {
 };
 
 function subtractQuantity() {
-  const quantity = document.getElementById("quantity");
+  let quantity = document.getElementById("quantity");
   quantity.innerText = eval(quantity.innerText) - 1;
   if (eval(quantity.innerText) < 1) {
     quantity.innerText = 1
@@ -26,7 +26,7 @@ function subtractQuantity() {
 };
 
 function addQuantity() {
-  const quantity = document.getElementById("quantity");
+  let quantity = document.getElementById("quantity");
   quantity.innerText = eval(quantity.innerText) + 1;
   if (eval(quantity.innerText) > 20) {
     quantity.innerText = 20
