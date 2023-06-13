@@ -1,1 +1,6 @@
-[]
+[
+    {
+        "id": "admin",
+        "secret": "admin"
+    }
+]

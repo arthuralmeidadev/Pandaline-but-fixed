@@ -1,16 +1,15 @@
 import crypto from "crypto";
 import jwt from "jsonwebtoken";
 import errors from "../config/errors.config.js";
-import { adminSecret } from "../config/server.config.js";
 import { keyString, initVectorString } from "../config/encryption.config.js";
 import { jwtSecret } from "../config/jwt.config.js";
 import fs from "fs-extra";
 
-async function authenticateUser(id, secret) {
+async function verifyUserCredentials(id, secret) {
   try {
-    const users = await fs.readJSON("../data/authorizedUsers.json");
-    
-    if (!users.includes(id) || secret !== adminSecret) {
+    const users = await fs.readJSON("./src/data/authorizedUsers.json");
+
+    if (!users.some(user => user.id === id && user.secret === secret)) {
       throw errors.unauthorized;
     };
 
@@ -75,8 +74,7 @@ async function verifyToken(token) {
 
 async function getNewAccessToken(decryptedData) {
   try {
-    const { id } = decryptedData;
-    const accessTokenPayload = await encrypt({ id, adminSecret });
+    const accessTokenPayload = await encrypt(decryptedData);
     const accessTokenClaims = { expiresIn: "3m" };
     const accessToken = jwt.sign(accessTokenPayload, jwtSecret, accessTokenClaims);
 
@@ -89,7 +87,7 @@ async function getNewAccessToken(decryptedData) {
 
 
 export const authentication = {
-  authenticateUser,
+  verifyUserCredentials,
   encrypt,
   decrypt,
   grabTokens,
