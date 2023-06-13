@@ -1,9 +1,10 @@
 import { authentication } from "../helpers/authentication.js";
+
 async function authenticationMiddleware(req, res, next) {
   const { accessToken } = req?.cookies;
   try {
     if (!accessToken)
-      throw new Error("Unauthorized");
+      throw Error();
 
     await authentication.verifyToken(accessToken);
     next();
