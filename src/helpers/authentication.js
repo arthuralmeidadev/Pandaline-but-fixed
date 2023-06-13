@@ -74,7 +74,9 @@ async function verifyToken(token) {
 
 async function getNewAccessToken(decryptedData) {
   try {
-    const accessTokenPayload = await encrypt(decryptedData);
+    const users = await fs.readJSON("./src/data/authorizedUsers.json");
+    const credentials = users.find(user => user.id == decryptedData.id);
+    const accessTokenPayload = await encrypt(credentials);
     const accessTokenClaims = { expiresIn: "3m" };
     const accessToken = jwt.sign(accessTokenPayload, jwtSecret, accessTokenClaims);
 
